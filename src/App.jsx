@@ -24,6 +24,10 @@ function App() {
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${search}`
     let res = await fetch(url)
     let data = await res.json()
+    if(data.message){
+      alert("not found")  
+      return
+    }
     setBack(false)
     setDataInfo(data)
     setLoding(false)
