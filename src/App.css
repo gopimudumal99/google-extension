@@ -4,8 +4,9 @@
   padding: 30px;
 }
 body{
-  background-color: aqua;
+  background-color: teal;
   padding: 10px;
+  color: white;
 }
 .lists{
   display: flex;
@@ -13,13 +14,15 @@ body{
 }
 
 button{
-  background-color: rgb(103, 146, 146);
-  border: none;
-  border-radius: 20px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5%;
   padding: 10px 20px;
   font-weight: bold;
   margin-left: 10px;
   margin-bottom: 10px;
+  text-transform: capitalize;
+  height: 40px;
 }
 
 button:hover{
@@ -39,4 +42,9 @@ span{
 .info > div{
   padding: 5px;
   font-size: 16px;
+}
+
+.info{
+  border-top: 1px solid gray;
+  margin-top: 5%;
 }
